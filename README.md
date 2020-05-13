@@ -2,7 +2,7 @@
 
 This project asychronously searches the Google Places API for "urgent care" locations. It iterates over all of the US Zip Codes, and stores the results in a document database. It could be easily adapted to any other term.
 
-[clinic fetcher](https://github.com/parquar/clinic-fetcher/blob/master/clinic-fetcher.png?raw=true)
+<img src=https://github.com/parquar/clinic-fetcher/blob/master/clinic-fetcher.png?raw=true/>
 
 ## Setup
 
