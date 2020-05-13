@@ -1,0 +1,36 @@
+# https://www.serverless.com/blog/serverless-python-packaging/
+# $ virtualenv venv --python=python3
+# $ source venv/bin/activate
+# $ pip install ***
+# $ pip freeze > requirements.txt
+# $ npm init
+# $ npm install --save serverless-python-requirements
+
+service: clinic-fetcher # your name here
+app: clinic-fetcher     # your name here
+org: parkerholcomb      # your name here
+
+provider:
+  name: aws
+  runtime: python3.8
+  timeout: 30
+  environment:
+    ACCESS_KEY: YOUR_AWS_KEY
+    SECRET_KEY: YOUR_AWS_SECRET
+    GOOGLE_KEY: YOUR_GOOGLE_KEY
+
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
+
+functions:
+  fetch_clinics:
+    handler: fetch_clinics.main
+    events:
+      - http:
+          path: fetch/clinics
+          method: post
+  

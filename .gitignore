@@ -1,0 +1,4 @@
+fetch_clinics/node_modules
+fetch_clinics/venv
+process_zips/venv
+*/__pycache__

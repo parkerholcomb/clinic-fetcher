@@ -1,0 +1,1 @@
+fetch_clinics_endpoint = "https://YOUR_SLUG_HERE.execute-api.us-east-1.amazonaws.com/dev/fetch/clinics"
