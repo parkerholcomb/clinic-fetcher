@@ -16,7 +16,7 @@ class BatchFetcher:
         self.max_workers = max_workers
         t0 = time.time()
         self.process()
-        print(f"Searched {len(zips_batch)} zip codes in {int(time.time() - to)} seconds")
+        print(f"Searched {len(zips_batch)} zip codes in {int(time.time() - t0)} seconds")
     
     @staticmethod
     def _fetch_clinics(zip_code, url = fetch_clinics_endpoint):
