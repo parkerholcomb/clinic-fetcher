@@ -1,6 +1,6 @@
 boto3==1.13.6
 botocore==1.16.6
-certifi==2020.4.5.1
+certifi==2022.12.7
 chardet==3.0.4
 docutils==0.15.2
 googlemaps==4.3.1
